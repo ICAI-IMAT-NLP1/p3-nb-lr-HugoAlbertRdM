@@ -30,6 +30,7 @@ def test_read_sentiment_examples():
         SentimentExample(["Example", "sentence", "one"], 0),
         SentimentExample(["Another", "example", "sentence"], 1),
     ]
+
     assert all([ex == exp_ex for ex, exp_ex in zip(examples, expected_results)])
 
 
